@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	ZeroFour by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio Sven - Flowey</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="flowey_pixelated.ico">
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<h1><a href="index.html" id="logo">Portfolio Sven</a></h1>
+
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+												<li><a href="index.html">Home</a></li>
+												<li class="current_page_item"><a href="projects.html">Projects</a></li>
+												<li><a href="about_me.html">About me</a></li>
+											</ul>
+										</nav>
+
+								</div>
+							</header>
+
+					</div>
+				</div>
+
+			<!-- Main Wrapper -->
+				<div id="main-wrapper">
+					<div class="wrapper style2">
+						<div class="inner">
+							<div class="container">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header class="major">
+												<h2>Flowey</h2>
+												<p></p>
+											</header>
+
+											<span class="image flowey"><img src="images/flowey_angry_zoomed2.jpeg" alt="" /></span>
+
+											<p><font size="5">
+												Meet Flowey! He is a speech-activated candy dispenser with sass. I made him for a project together with a duo.
+												When you ask him for a candy very nicely he will give you one, if you're sad he'll even give one extra.
+												But if you ask for something else, he won't. And if you ask angrily he will look at you even angrier!
+												</font>
+											</p>
+
+											<h3>Process</h3>
+											<p><font size="4">
+												We went from ideating to having Flowey up-and-running in a little over a week. We started with ideating and settling
+												on the idea for a candy experience based on the undertale character Flowey. Then we made a 3d model of the design,
+												after we had this we started 3D printing, laser-cutting, cutting, glueing etc. In the meantime, 
+												we were also busy with building the speech-detection AI. We started by researching which model would work the best, 
+												we picked a CNN+LSTM architecture.
+											</p>
+											<p>
+												We ended up using two models: One for classifying the user's emotion, and one for detecting when the user said "Please give me candy!".
+												Then we collected data with over 30 participants to have a diverse dataset. Then we also had to design a real-time detection 
+												algorithm, for this we used a sliding moving average.
+												We finished the project with testing, which went very well, the AI had a precision of 100% and recall of 95%
+												in sentence detection and 80% precision, 75% recall for emotion detection.
+												</font>
+											</p>
+												<video width="640" height="360" controls>
+												<source src="videos/Flowey_reaction.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+												</video>
+											<p><font size="4">
+												Here you can see Flowey in action. As you can see, when you say random sentences or stay silent, Flowey gives you no candy
+												but when you ask specifically "Please give me a candy", he complies.
+											</font></p>
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+			<!-- Footer Wrapper -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+
+							</div>
+							<div class="col-6 col-12-medium imp-medium">
+
+
+								<!-- Contact -->
+									<section>
+										<h2>Get in touch</h2>
+										<div>
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<dl class="contact">
+														<dt>Email</dt>
+														<dd><a href="mailto:s.vandokkum@student.utwente.nl">s.vandokkum@student.utwente.nl</a></dd>
+														<dt>LinkedIn</dt>
+														<dd><a href="https://www.linkedin.com/in/sven-van-dokkum/">Go to my LinkedIn page</a></dd>
+														
+													</dl>
+												</div>
+												<div class="col-6 col-12-small">
+													<dl class="contact">
+														<dt>Phone</dt>
+														<dd>06 40561882</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</footer>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
